@@ -7,6 +7,7 @@ import { Background } from '../../components/Background';
 import { ListHeader } from '../../components/ListHeader';
 import { Header } from '../../components/Header';
 import { Member } from '../../components/Member';
+import { ButtonIcon } from '../../components/Buttonicon';
 import { ListDivider } from '../../components/ListDivider';
 
 import { theme } from '../../global/styles/theme';
@@ -82,6 +83,10 @@ const AppointmentDetails: React.FC = () => {
             ItemSeparatorComponent={() => <ListDivider />}
             style={styles.members}
         />
+
+        <View style={styles.footer}>
+          <ButtonIcon title='Entrar na partida'/>
+        </View>
     </Background>
 
 
